@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-8_^e2k3*(de(ep0#qh5)t_5^f8*)+pdq042nxppdb0tqugawm%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["https://myshopn.netlify.app", "http://localhost:3000"]
 
 
 # Application definition
@@ -183,6 +183,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
     "https://myshopn.netlify.app",
+    "http://localhost:3000",
    
 ]
 
