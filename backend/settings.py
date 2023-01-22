@@ -164,16 +164,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 # STATIC_URL = 'static/'
-STATIC_URL = '/staticfile/'
+STATIC_URL = '/static/'
 STATIC_ROOT =  BASE_DIR / 'staticfile'
 
 
 
-# STATICFILES_DIRS = [
-#     BASE_DIR / 'static'
-# ]
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+    BASE_DIR / 'frontend/build/static'
+]
 
-MEDIA_URL = 'static/images/'
+MEDIA_URL = '/images/'
 MEDIA_ROOT = 'static/images'
 
 # Default primary key field type
