@@ -129,7 +129,7 @@ def createProduct(request):
         price =0,
         brand='Sample Brand',
         countInStock=0,
-        category='Sample Category',
+        category='',
         description=''
     )
     serializer = ProductSerializer(product, many=False)
