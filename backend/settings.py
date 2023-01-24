@@ -173,8 +173,8 @@ STATIC_ROOT =  BASE_DIR / 'staticfile'
 #     BASE_DIR / 'static'
 # ]
 
-MEDIA_URL = '/images/'
-MEDIA_ROOT = 'static/images'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 
