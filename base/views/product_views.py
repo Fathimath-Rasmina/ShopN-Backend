@@ -123,13 +123,14 @@ def createProductReview(request, pk):
 @permission_classes([IsAdminUser])
 def createProduct(request):
     user = request.user
+    # category = Category.objects.filter(id=1)
     product = Product.objects.create(
         user=user,
         name='Sample name',
         price =0,
         brand='Sample Brand',
         countInStock=0,
-        category='',
+        category='Sample category',
         description=''
     )
     serializer = ProductSerializer(product, many=False)
