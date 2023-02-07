@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'base.apps.BaseConfig',
     'rest_framework',
     'corsheaders',
+    'django_filters',
+    
 ]
 
 REST_FRAMEWORK = {

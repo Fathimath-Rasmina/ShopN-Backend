@@ -11,7 +11,8 @@ urlpatterns = [
     path('store/',views.getStoreProducts, name='store-products'),
     path('category/',views.getCategory,name='product-category'),
     path('category/create/',views.createCategory,name='category-create'),
-    path('filter/',views.getFilterProducts,name='product-filter'),
+    
+    path('filter/',views.FilterProduct.as_view(),name='product-filter'),
     path('create/',views.createProduct,name='product-create'),
     path('upload/',views.uploadImage,name='image-upload'),
     
