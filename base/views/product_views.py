@@ -216,7 +216,6 @@ def uploadImage(request):
     
 #admin get category
 @api_view(['GET'])
-@permission_classes([IsAdminUser])
 def getCategory(request):
     try:
         category = Category.objects.all()
