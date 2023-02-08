@@ -174,7 +174,7 @@ def updateProduct(request, pk):
         product.price = data['price']
         product.brand = data['brand']
         product.countInStock = data['countInStock']
-        product.category = data['category']
+        product.category = product.category
         product.description = data['description']
         
         product.save()
